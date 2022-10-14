@@ -1,7 +1,8 @@
 const fs = require('fs').promises;
 
 
-fs.writeFile('./lecture/WRITTEN.txt', '하하하하').then(() => {
+fs.writeFile('./lecture/WRITTEN.txt', '하하하하')
+    .then(() => {
 
   return fs.readFile('./lecture/WRITTEN.txt');
 })
